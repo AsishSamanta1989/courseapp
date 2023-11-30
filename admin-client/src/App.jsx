@@ -2,11 +2,16 @@ import { useState } from 'react'
 import {userState} from "../store/atoms/user.js"
 import { BASE_URL } from './config.js';
 import { useEffect } from 'react';
+import { useSetRecoilState, RecoilRoot } from 'recoil';
+import Appbar from "./components/Appbar.jsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
 
   return (
+    <RecoilRoot>
+      <Router>
     <div style = {
       {
         width: "100vw",
@@ -14,9 +19,13 @@ function App() {
         backgroundColor: "#C7DFC5"
       }
     }>
+    
        <InitUser />
+       <Appbar />
       Hi from courseapp
     </div>
+    </Router>
+    </RecoilRoot>
   )
 
 
