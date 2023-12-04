@@ -7,6 +7,7 @@ import Appbar from "./components/Appbar.jsx";
 import Signup from "./components/Signup.jsx";
 import Signin from "./components/Signin.jsx";
 import Signuperror from "./components/Signuperror.jsx";
+import Landing from "./components/Landing.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -25,12 +26,13 @@ function App() {
     
        <InitUser />
        <Appbar />
-      Hi from courseapp
+      
         <Routes>
 
           <Route path = {"/signup"} element = {<Signup />}></Route>
           <Route path = {"/signuperror"} element = {<Signuperror />}></Route>
           <Route path = {"/signin"} element = {<Signin />}></Route>
+          <Route path = {"/"} element = {<Landing />}></Route>
 
         </Routes>
     </div>
