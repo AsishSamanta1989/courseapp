@@ -9,6 +9,8 @@ import Signin from "./components/Signin.jsx";
 import Signuperror from "./components/Signuperror.jsx";
 import Landing from "./components/Landing.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AddCourse from './components/addCourse.jsx';
+import Courses from './components/Courses.jsx';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
           <Route path = {"/signuperror"} element = {<Signuperror />}></Route>
           <Route path = {"/signin"} element = {<Signin />}></Route>
           <Route path = {"/"} element = {<Landing />}></Route>
+          <Route path = {"/addcourse"} element = {<AddCourse />}></Route>
+          <Route path = {"/courses"} element = {<Courses />}></Route>
 
         </Routes>
     </div>
