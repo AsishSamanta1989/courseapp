@@ -38,7 +38,7 @@ function App() {
           <Route path = {"/"} element = {<Landing />}></Route>
           <Route path = {"/addcourse"} element = {<AddCourse />}></Route>
           <Route path = {"/courses"} element = {<Courses />}></Route>
-          <Route path = {"/course"} element = {<Course />}></Route>
+          <Route path = {"/course/:courseId"} element = {<Course />}></Route>
 
         </Routes>
     </div>
