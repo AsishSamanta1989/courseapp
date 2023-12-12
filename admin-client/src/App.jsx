@@ -11,6 +11,7 @@ import Landing from "./components/Landing.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AddCourse from './components/addCourse.jsx';
 import Courses from './components/Courses.jsx';
+import Course from './components/Course.jsx';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path = {"/"} element = {<Landing />}></Route>
           <Route path = {"/addcourse"} element = {<AddCourse />}></Route>
           <Route path = {"/courses"} element = {<Courses />}></Route>
+          <Route path = {"/course"} element = {<Course />}></Route>
 
         </Routes>
     </div>
